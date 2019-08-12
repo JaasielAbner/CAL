@@ -1,4 +1,12 @@
-/* Alunos: Lucas Meneghelli e Vinicius Gasparini | Tarefa 2.a */
+/*
+##############################
+#      Lucas Meneghelli      #
+#     Vinicius Gasparini     #
+# Complexidade de Algoritmos #
+#   Atividade 2a - Potencia  #
+##############################
+*/
+
 
 #include <bits/stdc++.h>
 
@@ -19,10 +27,10 @@ int main(int argc, char const *argv[])
     long a, b;
 
     cout << "Algoritmo a:" << endl;
-    
+
     cout << "Informe a:";
     cin >> a;
-    
+
     cout << "Informe b:";
     cin >> b;
 

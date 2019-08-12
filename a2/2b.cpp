@@ -1,4 +1,11 @@
-/* Alunos: Lucas Meneghelli e Vinicius Gasparini | Tarefa 2.a */
+/*
+##############################
+#      Lucas Meneghelli      #
+#     Vinicius Gasparini     #
+# Complexidade de Algoritmos #
+#  Atividade 2b - Matrizes   #
+##############################
+*/
 
 #include <bits/stdc++.h>
 

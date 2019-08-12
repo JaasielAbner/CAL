@@ -1,11 +1,17 @@
-/* Aluno: Vinicius Gasparini | Disciplina: Complexidade de Algoritmos | Atividade 1 - Ocorrência*/
+/*
+##############################
+#     Vinicius Gasparini     #
+# Complexidade de Algoritmos #
+#  Atividade 1 - Ocorrência  #
+##############################
+*/
 
 #include <bits/stdc++.h>
 #define MAXN 1000006
 
 using namespace std;
 
-map<long long, int> count_map; // std::map implementa uma árvore rubro-negra balanceada. 
+map<long long, int> count_map; // std::map implementa uma árvore rubro-negra balanceada.
 
 int main(){
     int n; scanf("%d",&n);

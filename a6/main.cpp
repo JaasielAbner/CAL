@@ -1,38 +1,21 @@
 #include<bits/stdc++.h>
+#define MAX_N 100005
 
 using namespace std;
 
-int* readFile( string fileName ){
-
-	int         num;
-	static int  vec[100001];
-	FILE*       file;
-
-    file = fopen( fileName.c_str(), "r" );
-
-    memset(vec, 0, sizeof(vec) );
-
-	while( !feof( file ) ){
-
-		fscanf( file, "%d\n", &num );
-        vec[num]++;
-
-	}
-
-    fclose( file );
-
-	return vec;
-
-}
-
 int main(int argc, const char** argv) {
     
-    int *vec;
+    int n; cin >> n;
+    int vec[MAX_N];
+    memset(vec,0,sizeof(vec));
     vector<int> sortedVec;
 
-    vec = readFile( "entrada.txt" );
+    for( int i = 0; i < MAX_N; i++ ){
+        int x; cin >> x;
+        vec[x]++;
+    }
 
-    for( int i = 0; i < 100001; i++ ){
+    for( int i = 0; i < MAX_N; i++ ){
         while( vec[i] ){
             sortedVec.push_back( i );
             vec[i]--;
@@ -42,10 +25,6 @@ int main(int argc, const char** argv) {
     for( auto n:sortedVec ){
         cout << n << endl;
     }
-
-    // for( int i = 0; i < 100001; i++ ){
-    //     printf( "%d ", vec[i] );
-    // }
 
     return 0;
 }

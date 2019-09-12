@@ -11,4 +11,6 @@ Analysis of Algorithms class
 - A1 Counting Occurrence
 - A2 Exponentiation, Matrix Multiplication and Sorting Algorithms
 - A3 Fibonacci recursive vs. iterative
-- A$ Recursive ruler
+- A4 Recursive ruler
+- A5 Foo function
+- A6 Counting sort

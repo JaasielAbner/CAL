@@ -14,3 +14,5 @@ Analysis of Algorithms class
 - A4 Recursive ruler
 - A5 Foo function
 - A6 Counting sort
+- A7 Data Structures
+- A8 Sieve of Eratostenes

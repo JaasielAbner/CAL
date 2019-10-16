@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#define MAX_N 500 // um milhão
+#define MAX_N 1000000 // um milhão
 
 using namespace std;
 
@@ -16,7 +16,7 @@ int main()
 
   // GERANDO CRIVO
   bool prime[MAX_N + 1];
-  vector<int> primes;
+  vector<unsigned long long int> primes;
 
   prime[0] = true;
   prime[1] = true;
@@ -28,40 +28,34 @@ int main()
     if (!prime[i])
     {
       primes.push_back(i);
-      printf("%d ", i);
     }
   }
-
-  printf("\n");
 
   // GERANDO N
   srand(time(NULL));
 
-  int p = primes[rand() % primes.size()];
-  int q;
+  unsigned long long int p = primes[rand() % primes.size()];
+  unsigned long long int q;
 
   do
   {
     q = primes[rand() % primes.size()];
   } while (q == p);
 
-  long long int n = p * q;
+  unsigned long long int n = p * q;
 
-  printf("%d %d %lld\n", p, q, n);
+  printf("p e q gerados:\t\t%llu\t%llu\n", p, q);
 
   // DESCOBRINDO N
-
-  long long int max_tries = sqrt(n); // ta erado isso aki
+  unsigned long long int max_try = n / 2;
   int i, j;
   bool achou;
 
-  printf("%d\n", primes[max_tries + 1]);
-
-  for (i = 0; i < max_tries; i++)
+  for (i = 0; primes[i] <= max_try && i < primes.size(); i++)
   {
-    for (j = 0; j < max_tries; j++)
+    for (j = 0; primes[j] <= max_try && j < primes.size(); j++)
     {
-      if (n == (long long int)primes[i] * primes[j])
+      if ( n == primes[i] * primes[j] )
       {
         achou = true;
         break;
@@ -73,8 +67,7 @@ int main()
 
   if (achou)
   {
-    printf("p encontrado: %d\n", primes[i]);
-    printf("q encontrado: %d\n", primes[j]);
+    printf("p e q encontrados:\t%llu\t%llu\n", primes[i], primes[j]);
   }
   else
   {

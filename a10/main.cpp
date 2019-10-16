@@ -46,7 +46,7 @@ int main()
 
   printf("p e q gerados:\t\t%llu\t%llu\n", p, q);
 
-  // DESCOBRINDO N
+  // DESCOBRINDO P E Q
   unsigned long long int max_try = n / 2;
   int i, j;
   bool achou;

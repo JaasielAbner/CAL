@@ -18,3 +18,4 @@ Analysis of Algorithms class
 - A8  Sieve of Eratostenes
 - A9  Miller-Rabin
 - A10 RSA Brute force
+- A11 Huffman enconding and 8-puzzle

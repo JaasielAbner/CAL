@@ -49,7 +49,11 @@ int main(){
 
     for(int i = 0; i < 9; i++){
         for(int j = 0; j < 17; j++){
+<<<<<<< HEAD
             printf("%3d", matrix[i][j]);
+=======
+            printf("%d\t", matrix[i][j]);
+>>>>>>> 1fb459e7a8e5b00a5e5ca80f3bd7abb3718d2c8a
         }
         printf("\n");
     }
